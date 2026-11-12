@@ -1,7 +1,6 @@
 import java.io.*;
 import java.util.*;
 
-/** Abstract base — demonstrates inheritance: Pizza extends MenuItem. */
 abstract class MenuItem {
     protected String name;
     public String getName() { return name; }
@@ -9,9 +8,8 @@ abstract class MenuItem {
 }
 
 /**
- * A single pizza: name + size + price.
- * Each distinct pizza/size combination is its own object, so Order
- * can hold references to these exact objects.
+ * single pizza: name + size + price.
+ * Each pizza orderis is an object, so Order has a list of object.
  */
 public class Pizza extends MenuItem {
     private String size;
@@ -49,10 +47,6 @@ public class Pizza extends MenuItem {
     }
 }
 
-/**
- * Inventory of pizzas (aggregation: a Menu has many Pizza objects).
- * Persists to pizzas.txt so it can be updated at runtime.
- */
 class Menu {
     private final String file;
     private final List<Pizza> pizzas = new ArrayList<>();

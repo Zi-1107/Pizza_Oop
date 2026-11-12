@@ -2,7 +2,6 @@ import java.util.*;
 
 /**
  * One customer order. Items are stored as (reference to Pizza object, quantity).
- * No Map is used — a List of OrderLine is used instead.
  */
 public class Order {
     public static final double TAX_RATE = 0.05;
@@ -11,7 +10,7 @@ public class Order {
     private final String date;    // dd/MM/yyyy
     private final List<OrderLine> lines = new ArrayList<>();
 
-    /** One ordered item: pointer to a Pizza object + quantity. */
+    /** ordered item: pointer to a Pizza object + quantity. */
     public static class OrderLine {
         private final Pizza pizza;
         private int quantity;
@@ -36,13 +35,12 @@ public class Order {
     public List<OrderLine> getLines(){ return lines; }
 
     /**
-     * Adds a pizza by reference. If the exact same Pizza object is already
-     * in this order, only the quantity is increased.
+     * Adds a pizza by reference. If the same type Pizza object is already in, only + quantity
      */
     public void addPizza(Pizza pizza, int quantity) {
         if (pizza == null || quantity <= 0) return;
         for (OrderLine line : lines) {
-            if (line.getPizza() == pizza) {   // identity: same object
+            if (line.getPizza() == pizza) {   
                 line.addQuantity(quantity);
                 return;
             }
@@ -60,7 +58,6 @@ public class Order {
 
     private static double round2(double v) { return Math.round(v * 100.0) / 100.0; }
 
-    /** Prints the receipt in the required Figure-1 layout. */
     public void printSummary() {
         System.out.println();
         System.out.println("Order ID: " + id + "\t\tDate: " + date);
@@ -77,8 +74,6 @@ public class Order {
         System.out.println();
     }
 
-    /** One-line record saved to orders.txt:
-     *  id;date;name|size|price|qty;name|size|price|qty;...          */
     public String toRecord() {
         StringBuilder sb = new StringBuilder();
         sb.append(id).append(';').append(date);
@@ -93,11 +88,6 @@ public class Order {
         return sb.toString();
     }
 
-    /**
-     * Rebuilds an Order from a saved line. Each item is re-linked to the
-     * matching Pizza object in the current menu (or a new Pizza if the menu
-     * no longer contains it).
-     */
     public static Order fromRecord(String record, Menu menu) {
         String[] parts = record.split(";");
         Order order = new Order(parts[0].trim(), parts[1].trim());

@@ -1,6 +1,1 @@
-Order for x:
-  mediterranean,L,22.5
-  mediterranean,L,22.5
-  mediterranean,L,22.5
-  TOTAL: $67.50
-
+P1000;12/11/2026;Margherita|S|9.50|3

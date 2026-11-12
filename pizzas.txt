@@ -1,36 +1,36 @@
-margherita,S,9.50
-margherita,M,13.50
-margherita,L,18.00
-pepperoni,S,10.75
-pepperoni,M,15.50
-pepperoni,L,20.80
-bbq_chicken,S,12.00
-bbq_chicken,M,17.25
-bbq_chicken,L,22.50
-vegetarian,S,11.00
-vegetarian,M,15.75
-vegetarian,L,21.00
-supreme,S,13.00
-supreme,M,18.50
-supreme,L,24.00
-hawaiian,S,11.50
-hawaiian,M,16.00
-hawaiian,L,21.50
-meat_lovers,S,13.50
-meat_lovers,M,19.00
-meat_lovers,L,24.50
-four_cheese,S,12.00
-four_cheese,M,16.50
-four_cheese,L,22.00
-buffalo_chicken,S,12.50
-buffalo_chicken,M,17.75
-buffalo_chicken,L,23.00
-mushroom_truffle,S,14.00
-mushroom_truffle,M,19.50
-mushroom_truffle,L,25.00
-philly_steak,S,13.75
-philly_steak,M,19.25
-philly_steak,L,24.75
-mediterranean,S,12.25
-mediterranean,M,17.00
-mediterranean,L,22.50
+Margherita,S,9.50
+Margherita,M,13.50
+Margherita,L,18.00
+Pepperoni,S,10.75
+Pepperoni,M,15.50
+Pepperoni,L,20.80
+BBQ Chicken,S,12.00
+BBQ Chicken,M,17.25
+BBQ Chicken,L,22.50
+Vegetarian,S,11.00
+Vegetarian,M,15.75
+Vegetarian,L,21.00
+Supreme,S,13.00
+Supreme,M,18.50
+Supreme,L,24.00
+Hawaiian,S,11.50
+Hawaiian,M,16.00
+Hawaiian,L,21.50
+Meat Lovers,S,13.50
+Meat Lovers,M,19.00
+Meat Lovers,L,24.50
+Four Cheese,S,12.00
+Four Cheese,M,16.50
+Four Cheese,L,22.00
+Buffalo Chicken,S,12.50
+Buffalo Chicken,M,17.75
+Buffalo Chicken,L,23.00
+Mushroom Truffle,S,14.00
+Mushroom Truffle,M,19.50
+Mushroom Truffle,L,25.00
+Philly Steak,S,13.75
+Philly Steak,M,19.25
+Philly Steak,L,24.75
+Mediterranean,S,12.25
+Mediterranean,M,17.00
+Mediterranean,L,22.50

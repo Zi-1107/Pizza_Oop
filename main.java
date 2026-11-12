@@ -44,7 +44,7 @@ public class Main {
         }
     }
 
-    // ---------------- 1. Order Pizza ----------------
+    // 1. Order Pizza
 
     static void orderPizza() {
         if (menu.getPizzas().isEmpty()) {
@@ -87,7 +87,7 @@ public class Main {
         }
     }
 
-    // ---------------- 2. View Order ----------------
+    // 2. View Order 
 
     static void viewOrder() {
         String id = readLine("Enter Order ID (e.g. P1000): ").toUpperCase();
@@ -102,7 +102,7 @@ public class Main {
         System.out.println("Order " + id + " not found.");
     }
 
-    // ---------------- 3. Pizza Maintenance ----------------
+    // 3. Pizza Maintenance
 
     static void maintenance() {
         while (true) {
@@ -198,9 +198,8 @@ public class Main {
         System.out.println("Deleted " + removed.getDisplayName());
     }
 
-    // ---------------- order file handling ----------------
+    // order file handling 
 
-    /** Read all saved orders from orders.txt. */
     static List<Order> loadOrders() {
         List<Order> list = new ArrayList<>();
         File f = new File(ORDERS_FILE);
@@ -222,8 +221,8 @@ public class Main {
         }
         return list;
     }
-
-    /** Append the new order, then trim the file to the last MAX_ORDERS (100). */
+    
+    // last 100 orders
     static void appendOrder(Order order) throws IOException {
         List<Order> all = loadOrders();
         all.add(order);
@@ -234,7 +233,6 @@ public class Main {
         }
     }
 
-    /** Next order id: P1000, P1001, ... */
     static String nextOrderId() {
         int max = 999;
         for (Order o : loadOrders()) {
@@ -244,7 +242,7 @@ public class Main {
         return "P" + (max + 1);
     }
 
-    // ---------------- helpers ----------------
+    // extra
 
     static void printMenu() {
         System.out.println();
